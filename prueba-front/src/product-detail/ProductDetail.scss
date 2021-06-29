@@ -1,0 +1,19 @@
+@import "./../styles/variables";
+
+.Detail-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: ". Bread Bread Bread Bread Bread . . . . . ." ". item item item item item item item item item item .";
+    grid-gap: 14px;
+
+    .Breadcrumb {
+        grid-area: Bread;
+    }
+
+    .Item {
+        grid-area: item;
+        .title {
+            line-height: 28px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+
+@import "./../../styles/variables";
+
+.List-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: ". Bread Bread . . . . . . . . ." ". items items items items items items items items items items .";
+    grid-gap: 14px;
+
+    .Breadcrumb {
+        grid-area: Bread;
+    }
+
+    .List-items {
+        grid-area: items;
+    }
+
+    .Item {
+        border-bottom: 1px solid $light-gray;
+
+        img {
+            width: 180px;
+            height: 180px;
+        }
+
+        .Location {
+            width: 172px;
+        }
+    }
+}

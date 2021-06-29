@@ -1,0 +1,18 @@
+.Finder-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: ". logo finder finder finder finder finder finder finder finder finder .";
+    grid-gap: 14px;
+
+    .Header-logo {
+        grid-area: logo;
+    }
+
+    .Header-finder {
+        grid-area: finder;
+
+        .Finder-icon {
+            width: 24px;
+        }
+    }
+}

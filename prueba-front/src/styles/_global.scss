@@ -1,0 +1,30 @@
+@import "./_variables.scss";
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &::selection {
+    background-color: $yellow;
+  }
+}
+
+// #root {
+//   background: $light-gray;
+// }
+
+body {
+  background: $light-gray !important;
+  color: $black;
+  font: 400 16px $roboto, sans-serif;
+  text-transform: none;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
